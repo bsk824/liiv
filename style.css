@@ -1,0 +1,101 @@
+@charset "utf-8";
+* {margin:0;padding:0;}
+html {font-size:62.5%;}
+body {color:#333;font:1.4rem/1 HelveticaNeue-Light,AppleSDGothicNeo-Light,'Malgun Gothic','맑은 고딕',sans-serif;-webkit-text-size-adjust:none;word-break:keep-all;letter-spacing:-1px;}
+h1, h2, h3, h4, h5 {font-weight:normal;}
+a {color:#333;text-decoration:none;}
+li {list-style:none;}
+table {width:100%;border-collapse:collapse;border:0;}
+colgroup {background:none;}
+input, select, textarea, button {vertical-align:0;font:1.4rem/1 HelveticaNeue-Light,AppleSDGothicNeo-Light,'Malgun Gothic','맑은 고딕',sans-serif;}
+fieldset, img {border:0;}
+img {vertical-align:top;}
+label, td img {vertical-align:middle;}
+legend, caption, .hidden {position:absolute;z-index:-1;visibility:hidden;font-size:0;}
+caption {position:static;font:0/0 a;}
+address, em {font-style:normal;}
+strong, b {font-weight:bold;}
+button {overflow:visible;cursor:pointer;background:none;border:0;border-radius:0;letter-spacing:-1px;}
+button::-moz-focus-inner {padding:0;border:0;}
+
+#header {position:relative;height:4.2rem;border-bottom:1px solid #ddd;}
+#header .pageTitle {height:100%;display:flex;justify-content:center;align-items:center;font-size:1.6rem;font-weight:bold;}
+#header .btnMenu,
+#header .btnBack {position:absolute;top:50%;transform:translateY(-50%);}
+#header .btnMenu {right:1rem;width:2rem;height:1.5rem;background:url(images/btn_menu.jpg) no-repeat;background-size:cover;}
+#header .btnBack {left:1rem;width:2rem;height:1.5rem;background:url(images/btn_back.jpg) no-repeat;background-size:cover;}
+
+#gnb {display:none;position:absolute;top:4.2rem;right:0;padding:1rem 0;background:#fff;border:1px solid #ddd;}
+#header .menuOn + #gnb {display:block;}
+#gnb a {display:block;padding:.5rem 1.5rem;}
+
+.tabList {height:4.2rem;border-bottom:1px solid #ddd;}
+.tabList ul {width:100%;height:100%;display:flex;}
+.tabList li {width:25%;height:100%;box-sizing:border-box;}
+.tabList li a {display:block;height:100%;display:flex;justify-content:center;align-items:center;}
+.tabList li.active {border-bottom:2px solid #9a64d4;}
+
+.mapWrap {height:20rem;}
+
+.storeList {margin:0 0 .5rem;}
+.storeList li {margin:.5rem .5rem 0;border:1px solid #ddd;}
+.storeList li a {display:block;position:relative;min-height:8rem;padding:1rem 1rem 1rem 11rem;}
+.storeList .name {display:block;margin-right:5rem;font-size:1.6rem;}
+.storeList .range {position:absolute;top:1rem;right:1rem;font-size:1.1rem;}
+.storeList .menu {display:block;width:100%;margin:1rem 0 0;white-space:nowrap;text-overflow:ellipsis;overflow:hidden;}
+.storeList .address {display:block;margin:.5rem 0 0;}
+.storeList .import {display:block;margin:.5rem 0 0;color:#f96873;}
+.storeList .thumb {position:absolute;top:50%;left:.5rem;width:8rem;height:8rem;border-radius:50%;overflow:hidden;transform:translateY(-50%);}
+.storeList .thumb img {width:100%;}
+.storeList .point {position:absolute;top:1rem;left:5rem;width:6rem;height:6rem;padding-top:1.5rem;background:#9a64d4;color:#fff;border-radius:50%;text-align:center;box-sizing:border-box;}
+.storeList .point strong {font-size:1.6rem;}
+
+.bookingList {margin:0 0 .5rem;}
+.bookingList .date {display:block;padding:1rem .5rem .5rem;color:#7b4cae;font-size:1.6rem;}
+.bookingList .store {display:block;position:relative;min-height:8rem;margin:.5rem .5rem 0;padding:1rem 1rem 1rem 11rem;border:1px solid #ddd;line-height:1.8;}
+.bookingList .store .thumb {position:absolute;top:50%;left:.5rem;width:8rem;height:8rem;margin:0;border-radius:50%;overflow:hidden;transform:translateY(-50%);}
+.bookingList .store .thumb img {width:100%;}
+.bookingList .store + .store {margin-top:.5rem;}
+
+.storeImgWrap {margin:.5rem 0 0;display:flex;justify-content:center;align-items:center;}
+.storeImgWrap img {width:33.33%;}
+
+.tableInfo {width:100%;margin:.5rem 0 3rem;}
+.tableInfo th {font-weight:normal;}
+.tableInfo th,
+.tableInfo td {padding:.5rem 0;color:#888;vertical-align:top;line-height:1.2;}
+.tableInfo td a {color:#888;}
+.tableInfo .import {display:block;color:#f96873;}
+
+.reservInput {padding:.5rem 0 0;border-top:1px solid #ddd;}
+.reservInput th {text-align:left;padding-left:1.5rem;vertical-align:middle;}
+
+.reservCom {border-top:1px solid #ddd;}
+.reservCom p {margin:2rem 1rem 0;}
+
+.storeBookingImg {margin:.5rem;border:1px solid #ddd;}
+.storeBookingImg img {width:100%;}
+.storeBookingTxt {margin:1.5rem 1rem;font-size:1.6rem;line-height:1.8;}
+
+.storeBookingPassword {margin:0 .5rem;padding:1.5rem 0 2rem;border:2px solid #9a64d4;border-radius:.5rem;text-align:center;font-size:1.6rem;line-height:1.5;color:#888;}
+.storeBookingPassword input[type="password"] {width:3rem;margin:0 .5rem;border:0;border-bottom:2px solid #9a64d4;text-align:center;font-size:1.6rem;}
+
+.storeBookingInfo {padding:1.5rem 1rem 3rem;}
+.storeBookingInfo h2 {color:#7b4cae;font-size:1.4rem;}
+.storeBookingInfo h2 ~ h2 {margin-top:2rem;}
+.storeBookingInfo p {margin-top:1rem;}
+
+.inputTxt {width:5rem;height:2.5rem;border-radius:.5rem;border:1px solid #aaa;box-sizing:border-box;vertical-align:middle;}
+.inputTxt + .inputTxt {margin:0 0 0 .5rem;}
+
+.btnWrap {margin:2.5rem 0 0;display:flex;justify-content:center;align-items:center;}
+[class*="btnType"] {display:inline-block;width:100%;height:6rem;box-sizing:border-box;display:flex;justify-content:center;align-items:center;font-weight:bold;}
+
+.btnLength2 [class*="btnType"] {width:50%;}
+
+.btnType1 {background:#7b4cae;color:#fff;}
+.btnType2 {background:#ddd;color:#888;}
+
+.btnDate {position:relative;display:inline-block;width:5rem;height:2.5rem;}
+.btnDate span {position:absolute;top:0;right:0;bottom:0;left:0;padding:.4rem 0 0;background:#ddd;border-radius:.5rem;text-align:center;}
+.btnDate input:checked + span {background:#9a64d4;color:#fff;}

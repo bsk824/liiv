@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<title>예약 정보 입력</title>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=yes, target-densitydpi=medium-dpi" name="viewport">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="format-detection" content="telephone=no">
+<link rel="stylesheet" type="text/css" href="style.css">
+<script type="text/javascript" src="jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="ui.js"></script>
+</head>
+<body>
+
+    <header id="header">
+        <h1 class="pageTitle">예약 정보 입력</h1>
+        <button type="button" class="btnBack"><span class="hidden">이전 페이지</span></button>
+    </header>
+    <section id="contents">
+        <table class="tableInfo">
+            <colgroup>
+                <col style="width:6rem;">
+                <col>
+            </colgroup>
+            <caption>가게 정보</caption>
+            <tbody>
+                <tr>
+                    <th scope="col">추 천</th>
+                    <td>교촌허니오리지널, 교촌레드 오리지널</td>
+                </tr>
+                <tr>
+                    <th scope="col">전 화</th>
+                    <td><a href="tel:0262798333">02-6279-8333</a></td>
+                </tr>
+                <tr>
+                    <th scope="col">주 소</th>
+                    <td>
+                        금천구 서부샛길 606
+                        <span class="import">예약 시 1000포인트 적립</span>
+                        <span class="import">예약 후 방문 시 음료 1잔 무료</span>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="reservInput">
+            <table class="tableInfo">
+                <colgroup>
+                    <col style="width:10rem;">
+                    <col>
+                </colgroup>
+                <caption>예약 정보 입력</caption>
+                <tbody>
+                    <tr>
+                        <th scope="col">날짜</th>
+                        <td>
+                            <label class="btnDate"><input type="radio" name="dateChk"> <span>오늘</span></label>
+                            <label class="btnDate"><input type="radio" name="dateChk"> <span>내일</span></label>
+                            <label class="btnDate"><input type="radio" name="dateChk"> <span>모레</span></label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="col">직접 입력</th>
+                        <td>
+                            <input type="number" class="inputTxt"> 월
+                            <input type="number" class="inputTxt"> 일
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="col">시 간</th>
+                        <td>
+                            <input type="number" class="inputTxt"> 시
+                            <input type="number" class="inputTxt"> 분
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="col">인 원</th>
+                        <td>
+                            <input type="number" class="inputTxt"> 명
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        <div>
+                
+        <div class="btnWrap">
+            <a href="#" class="btnType1">예약완료</a>
+        </div>
+    
+        <div class="reservCom">
+            <p>11월 23일 14시 30분 5명</p>
+            <p>1234님으로 예약 신청이 완료되었습니다.</p>
+            <p>“내 예약”에서 예약 내역을 확인하세요.</p>
+        <div>
+                
+        <div class="btnWrap">
+            <a href="#" class="btnType1">확 인</a>
+        </div>
+    </section>
+    
+</body>
+</html>
